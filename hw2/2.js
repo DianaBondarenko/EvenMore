@@ -65,7 +65,7 @@ console.log(automorphic(6));
 // Imagine JavaScript didn't natively include the call function. The apply
 // function however still exists. Using apply, write call.
 
-Function.prototype.call = function(context, ...args) {
+Function.prototype.call = function (context, ...args) {
     return this.apply(context, args);
 };
 
