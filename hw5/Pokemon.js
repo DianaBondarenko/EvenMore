@@ -29,7 +29,6 @@ class Pokemon {
       <div>Species: ${this.species}</div>
       <div>Abilities: ${this.abilities.map(el => el.ability.name)}</div>
     `;
-    console.log(this.abilities.map(el => el.ability.name))
     node.appendChild(block);
   }
 }
