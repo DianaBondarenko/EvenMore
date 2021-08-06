@@ -62,13 +62,13 @@ rangeInput.addEventListener('input', () => {
 loadBtn.addEventListener('click', loadData);
 
 closeModal.addEventListener('click', () => {
-    modalContent.innerHTML = '';
+    modalContent.lastElementChild.innerHTML = '';
     modal.classList.add('hidden');
 });
 
 window.addEventListener('click', (ev) => {
     if (ev.target == modal) {
-        modalContent.innerHTML = '';
+        modalContent.lastElementChild.innerHTML = '';
         modal.classList.add('hidden');
     }
 });
